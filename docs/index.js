@@ -39,7 +39,7 @@ async function startApplication() {
   }
 
   response = await fetch(
-    "https://raw.githubusercontent.com/ddalgotrader/control_trading_costs_repo/docs/spreads_df.csv"
+    "https://raw.githubusercontent.com/ddalgotrader/control_trading_costs/main/docs/spreads_df.csv"
   );
   response.ok && response.status === 200
     ? (spreads = await response.text())
