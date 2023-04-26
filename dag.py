@@ -28,7 +28,7 @@ symbols_df=pd.read_csv('/path/to/file/symbols.csv')
 def extract(**kwargs):
     ti = kwargs['ti']
     client = APIClient()
-    client.execute(loginCommand(userId=XTB_USER_ID, password='XTB_PASSWORD'))
+    client.execute(loginCommand(userId=XTB_ACCOUNT_ID, password='XTB_PASSWORD'))
     spreads = {'data': []}
     date_time = datetime.now().strftime('%Y-%m-%d %H:%M:00')
 
